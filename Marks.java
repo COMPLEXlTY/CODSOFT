@@ -16,7 +16,7 @@ public class Marks{
         
         int tot = sub1 + sub2 + sub3;
         
-        double avgPer = (double) tot / 3; // Assuming 3 subjects
+        double avgPer = (double) tot / 3; 
         
         char grade = calculateGrade(avgPer);
 
