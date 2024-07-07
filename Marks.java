@@ -4,7 +4,7 @@ public class Marks{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input marks for each subject
+        
         System.out.println("Enter marks obtained in each subject (out of 100):");
         System.out.print("VLSI: ");
         int sub1 = scanner.nextInt();
@@ -13,15 +13,13 @@ public class Marks{
         System.out.print("RDBMS: ");
         int sub3 = scanner.nextInt();
 
-        // Calculate total marks
+        
         int tot = sub1 + sub2 + sub3;
-
-        // Calculate average percentage
+        
         double avgPer = (double) tot / 3; // Assuming 3 subjects
-        // Calculate grade
+        
         char grade = calculateGrade(avgPer);
 
-        // Display results
         System.out.println("\nResults:");
         System.out.println("Total Marks: " + tot);
         System.out.println("Average Percentage: " + avgPer + "%");
